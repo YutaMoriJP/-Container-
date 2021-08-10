@@ -1,1 +1,1 @@
-A useful React Container component. Bundled with parcel.
+A Useful React Container component. Bundled with parcel.

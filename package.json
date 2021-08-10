@@ -1,14 +1,14 @@
 {
-  "name": "containerwrapper",
+  "name": "react-container-wrapper",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Useful React Container component. Bundled with parcel.",
   "main": "index.js",
   "scripts": {
     "start": "npx parcel src/index.html",
-    "build": "npx parcel build src/index.html"
+    "build": "npx parcel build src/index.html --experimental-scope-hoisting"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yuta Mori",
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
@@ -17,5 +17,13 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-components": "^5.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YutaMoriJP/-Container-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YutaMoriJP/-Container-/issues"
+  },
+  "homepage": "https://github.com/YutaMoriJP/-Container-#readme"
 }
