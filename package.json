@@ -1,6 +1,6 @@
 {
   "name": "react-container-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Useful React Container component. Bundled with parcel.",
   "main": "index.js",
   "scripts": {
