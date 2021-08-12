@@ -11,9 +11,13 @@
   "author": "Yuta Mori",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-components": "^5.3.0"

@@ -1,28 +1,29 @@
 import { createGlobalStyle } from "styled-components";
+import { SIZES } from "./themeTokens";
 
 const Global = createGlobalStyle`
     :root {
-        box-sizing:border-box;
+        background: #edf2ff;
+        box-sizing: border-box;
         margin:0;
         padding:0;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        --bg-dark: #212529;
-        --bg-light: #dee2e6;
-        --bg-dark-container: #495057;
-        --bg-light-container: #f1f3f5;
-        --size: 5px;
-         @media screen and (min-width:700px) {
-            font-size: 16px;
-            --size: 8px
-        }
-        @media screen and (min-width: 1000px) {
-            font-size: 18px;
-            --size: 10px
-        }
+        font-size: ${SIZES[0]}px;
+         @media screen and (min-width: 500px) and (max-width:600px) {
+            font-size: ${SIZES[1]}px;
+         }
+        @media screen and (min-width: 601px) and (max-width: 900) {
+            font-size: ${SIZES[2]}px;
+         }
+        @media screen and (min-width:901px) and (max-width: 1300px) {
+            font-size: ${SIZES[3]}px;
+         }
+        @media screen and (min-width:1301px) {
+            font-size: ${SIZES[4]}px;
+         }
     }
     body {
-        text-align:center
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
     }
     body[data-theme='dark']{
         background: var(--bg-dark);
@@ -51,15 +52,6 @@ const Global = createGlobalStyle`
                 content: '🌙'
             }
          }
-      
-    }
-    div [data-theme="light"] {
-        background: #e9ecef;
-        box-shadow: 6px 6px 25px #868e96;
-    } 
-    div [data-theme="dark"] {
-        background: #495057;
-        box-shadow: 6px 6px 25px #212529;
     }
 `;
 
